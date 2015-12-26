@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Simple Translation",
+  "description": "from Youdao",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Translation"
+  },
+  "permissions": [
+    "http://*/*",
+    "https://*/*",
+    "contextMenus",
+    "tabs",
+    "activeTab"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "web_accessible_resources": ["inc/jquery-2.1.0.min.js", "translate.js"]
+}
